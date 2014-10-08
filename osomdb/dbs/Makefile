@@ -2,7 +2,7 @@
 
 DBS_OBJS=dbs.o json.o
 DBSCLI_OBJS=dbscli.o json.o
-CXXFLAGS=-W -Wall -std=c++0x
+CXXFLAGS=-W -Wall -std=c++0x -I../common/
 TEST_OBJS=
 
 %.o: %.cpp
