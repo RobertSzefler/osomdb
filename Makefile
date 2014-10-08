@@ -9,7 +9,7 @@ CXXFLAGS=-W -Wall -std=c++0x
 
 all: dbs dbscli
 dep:
-	$(CXX) *.cpp > .depend
+	$(CXX) $(CXXFLAGS) -MM *.cpp > .depend
 clean:
 	rm -rf *.o dbs dbscli
 
